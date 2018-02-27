@@ -1,6 +1,7 @@
 {
     "name": "anon/laravel-model-meta",
     "description": "erwan/laravel-model-metadata",
+    "version": "0.1",
     "type": "laravel-package",
     "authors": [
         {
