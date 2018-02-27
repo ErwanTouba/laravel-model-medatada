@@ -1,0 +1,27 @@
+{
+    "name": "anon/laravel-model-meta",
+    "description": "erwan/laravel-model-metadata",
+    "type": "laravel-package",
+    "authors": [
+        {
+            "name": "erwan touba",
+            "email": "touba.erwan@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.6",
+        "illuminate/database": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erwan\\LaravelModelMetadata\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Erwan\\LaravelModelMetadata\\LaravelModelMetadataProvider"
+            ]
+        }
+    }
+}
