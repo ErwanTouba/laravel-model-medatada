@@ -1,14 +1,11 @@
-<?php 
+<?php
 namespace ErwanTouba\LaravelModelMetadata\Database\Shema;
-
 use Illuminate\Database\Schema\Blueprint;
-/**
-* 
-*/
-class MetadataBlueprint extends Blueprint
-{
-	public function metadata() {
-		// add created,updated,deleted_by
-		// morph_to_many (multiple models support)
-	}
+
+class MetaBlueprint extends Blueprint {
+
+    public function metadata($column = null) {
+        $this->addColumn('metadata', 'created_by')->nullable();
+        $this->addColumn('metadata', 'updated_by')->nullable();        
+    }
 }
